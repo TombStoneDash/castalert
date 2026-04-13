@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "CastAlert",
+    "slug": "castalert",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "castalert",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0a0f1a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tombstonedash.castalert",
+      "buildNumber": "45"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2E8B57"
+        }
+      ]
+    ]
+  }
+}
