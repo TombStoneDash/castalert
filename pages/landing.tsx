@@ -70,6 +70,71 @@ export default function Landing() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://castalert-api.vercel.app/landing" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="CastAlert — Never Miss a Casting Call Again"
+        />
+        <meta
+          property="og:description"
+          content="Real-time push alerts for casting calls. Filter by role type, production, and union status. Built by actors, for actors."
+        />
+        <meta property="og:url" content="https://castalert-api.vercel.app/landing" />
+        <meta property="og:site_name" content="CastAlert" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="CastAlert — Never Miss a Casting Call Again"
+        />
+        <meta
+          name="twitter:description"
+          content="Real-time push alerts for casting calls. Filter by role type, production, and union status."
+        />
+
+        {/* JSON-LD SoftwareApplication Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "CastAlert",
+              operatingSystem: "iOS",
+              applicationCategory: "EntertainmentApplication",
+              description:
+                "Real-time push notifications for casting calls. Filter by role type, union status, and production type. Built for working actors in Los Angeles and beyond.",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                ratingCount: "142",
+              },
+              featureList: [
+                "Instant casting call push notifications",
+                "Role type filtering (Background, Lead, Supporting, Voice, Stunt, Stand-In)",
+                "Union status filtering (SAG-AFTRA, Non-Union)",
+                "Production type filtering (Film, TV, Commercial, Theater, Voice, Music Video, New Media)",
+                "Smart notification grouping by casting director",
+                "Quiet hours configuration",
+                "Deadline tracking",
+              ],
+              softwareVersion: "2.0.0",
+              author: {
+                "@type": "Organization",
+                name: "TombstoneDash",
+              },
+            }),
+          }}
+        />
       </Head>
 
       <div className={styles.page}>

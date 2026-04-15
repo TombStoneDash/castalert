@@ -14,6 +14,67 @@ export default function BackgroundWorkLA() {
           name="description"
           content="Step-by-step guide to configuring CastAlert for background casting calls in LA. Filter by production type, union status, and more."
         />
+        <link
+          rel="canonical"
+          href="https://castalert-api.vercel.app/blog/casting-alerts-background-work-los-angeles"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="How to Set Up Casting Alerts for Background Work in Los Angeles"
+        />
+        <meta
+          property="og:description"
+          content="Step-by-step guide to configuring CastAlert for background casting calls in LA. Filter by production type, union status, and more."
+        />
+        <meta
+          property="og:url"
+          content="https://castalert-api.vercel.app/blog/casting-alerts-background-work-los-angeles"
+        />
+        <meta property="og:site_name" content="CastAlert" />
+        <meta property="article:published_time" content="2026-04-14T00:00:00Z" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:title"
+          content="How to Set Up Casting Alerts for Background Work in LA"
+        />
+        <meta
+          name="twitter:description"
+          content="Step-by-step guide to configuring CastAlert for background casting calls in LA."
+        />
+
+        {/* JSON-LD BlogPosting Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline:
+                "How to Set Up Casting Alerts for Background Work in Los Angeles",
+              description:
+                "Step-by-step guide to configuring CastAlert for background casting calls in LA. Filter by production type, union status, and more.",
+              datePublished: "2026-04-14T00:00:00Z",
+              author: {
+                "@type": "Organization",
+                name: "CastAlert",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "CastAlert",
+              },
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id":
+                  "https://castalert-api.vercel.app/blog/casting-alerts-background-work-los-angeles",
+              },
+            }),
+          }}
+        />
       </Head>
 
       <div className={styles.page}>

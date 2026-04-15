@@ -22,6 +22,25 @@ export default function BlogIndex() {
           name="description"
           content="Tips, guides, and industry insights for working actors. Learn how to land more auditions with CastAlert."
         />
+        <link rel="canonical" href="https://castalert-api.vercel.app/blog" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Blog — CastAlert" />
+        <meta
+          property="og:description"
+          content="Tips, guides, and industry insights for working actors. Learn how to land more auditions with CastAlert."
+        />
+        <meta property="og:url" content="https://castalert-api.vercel.app/blog" />
+        <meta property="og:site_name" content="CastAlert" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Blog — CastAlert" />
+        <meta
+          name="twitter:description"
+          content="Tips, guides, and industry insights for working actors."
+        />
       </Head>
 
       <div className={styles.page}>
