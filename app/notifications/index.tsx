@@ -14,6 +14,7 @@ import {
   saveNotificationHistory,
   groupNotifications,
 } from "@/services/push";
+import { filterNotifications } from "@/services/search";
 import type { CastingNotification, NotificationGroup } from "@/types/notifications";
 
 export default function NotificationsScreen() {
@@ -63,13 +64,7 @@ export default function NotificationsScreen() {
     });
   }
 
-  const filtered = notifications.filter(
-    (n) =>
-      !search ||
-      n.roleName.toLowerCase().includes(search.toLowerCase()) ||
-      n.productionTitle.toLowerCase().includes(search.toLowerCase()) ||
-      n.castingDirector?.toLowerCase().includes(search.toLowerCase())
-  );
+  const filtered = filterNotifications(notifications, search);
 
   const groups = groupNotifications(filtered);
 
