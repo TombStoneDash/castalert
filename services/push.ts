@@ -8,6 +8,7 @@ import type {
   NotificationPreferences,
   DEFAULT_PREFERENCES,
 } from "@/types/notifications";
+import { getUrgencyLabel } from "./urgency";
 
 // Configure notification handler — show even when app is foregrounded
 Notifications.setNotificationHandler({
@@ -65,10 +66,7 @@ export async function registerForPushNotifications(): Promise<string | null> {
  */
 export function buildCastingNotification(casting: CastingNotification): Notifications.NotificationContentInput {
   const deadlineDate = new Date(casting.deadline);
-  const daysLeft = Math.ceil(
-    (deadlineDate.getTime() - Date.now()) / (1000 * 60 * 60 * 24)
-  );
-  const urgency = daysLeft <= 1 ? "URGENT" : daysLeft <= 3 ? "Soon" : "";
+  const urgency = getUrgencyLabel(casting.deadline);
 
   return {
     title: `${urgency ? `[${urgency}] ` : ""}${casting.roleName}`,
